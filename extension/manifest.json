@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "微窗 · MiniFloat",
+  "version": "0.1.1",
+  "description": "一键把当前视频送到可缩小、可调不透明度的 Windows 桌面小窗。",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "nativeMessaging",
+    "storage"
+  ],
+  "action": {
+    "default_title": "微窗：接管当前视频",
+    "default_icon": "icon128.png"
+  },
+  "icons": {
+    "128": "icon128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "help.html",
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+V"
+      },
+      "description": "用微窗打开当前视频"
+    }
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArORZTXnXp9IgEdpeXAVlxNtor4IVaclwG1fuLtZMPAM5sSJuS5ckZyggotQRbz5jdpDRseSpPN2QTRDnoUC7j7obqUPhVTe+kaZw1ObWOmAtiF19HKisdTowp6iPQIu/fTFgpCA+Ip70v7sgPCf8TGw3PWyzby3UzlM+XVX7setlPCRORO7LrI3s8HYATZFXn/FTvVGNHe0gLVPCP7ed1xTR2QuPXkuYHoIdBSeTMQoqy/RXdNkTJKBbHy9bGRw1cDejmZuodld8+DmxmWhWFCAZeWXzrHDmDdIdJON54kzd0vk5jU8vUgLd8hCcCoSZKLslgmflDM9n3OEMCppyZQIDAQAB"
+}
